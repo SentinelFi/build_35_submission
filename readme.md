@@ -70,14 +70,8 @@ On the insurance front, we’ve made strong progress validating real use cases a
   - One of them is building **crop insurance** for weather-related risks in Africa and applying to the next Kickstart round. [Team/project link](#)
 - Additionally, we conducted **over a dozen user interviews** during ETHDenver 2025 with both insurance buyers and DeFi yield providers, helping us validate product-market fit across both user groups.
 
-On the insurance front, we’ve made strong progress validating real use cases and building functional prototypes:
 
-- A working **Flight Delay Insurance UI** is live and ready for testing. [View UI](#)
-- We’ve also built a **Fire Insurance prototype** for the Build on Stellar Hackathon, using NASA’s FIRMS API and satellite fire data. This demonstrates that with a reliable oracle, we can launch effective parametric insurance products across multiple verticals. [Project link](#)
-- We’re currently in conversations with two other teams interested in building on our framework:
-  - One of them is building **crop insurance** for weather-related risks in Africa and applying to the next Kickstart round. [Team/project link](#)
-- Additionally, we conducted **over a dozen user interviews** during ETHDenver 2025 with both insurance buyers and DeFi yield providers, helping us validate product-market fit across both user groups.
-- We also performed **preliminary Monte Carlo simulations** to explore sustainable yield generation for counterparty investors:
+We also performed **preliminary Monte Carlo simulations** to explore sustainable yield generation for counterparty investors:
   - For **Flight Insurance**, simulations show a median yield of **50%** with a 3-hour delay threshold and flight delay probabilities ranging from 1% to 10%.
   - For **Fire Insurance**, simulations show a median yield of **50–220%** in areas with prior wildfire activity, assuming wildfire probabilities between **0.3% and 1.7%**. [Yield analysis](#)
 
@@ -89,7 +83,7 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 ## Thumbnail: *
 
-**This will be the first thing people see about your project–make it look nice! Attach a 16:9 thumbnail.**
+![alt text](image.png)
 
 ## SCF Build Tranche Deliverables
 
