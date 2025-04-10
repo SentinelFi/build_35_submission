@@ -55,13 +55,37 @@ In short, Sentinel Protocol provides the following:
 
 ## Traction Evidence: 
 
-**Provide justification below as to how you're meeting the criteria on project traction and validation of the SCF Build Award. This may include user numbers, links to onchain transaction history, links to user discovery interviews, sign-up lists for beta programs, etc.**
+Since receiving the Kickstart Grant, we’ve made meaningful technical progress on the Sentinel Protocol framework, laying the foundation for decentralized parametric insurance on Soroban. Highlights include:
 
+- Implementation of our ERC-4626-style vault standard, designed for modular use across DeFi applications. [View the repo](#)
+- Ongoing work to integrate the vault standard as an extension of OpenZeppelin’s token library on Soroban, in collaboration with the OpenZeppelin team. [Discussion or PR link](#)
+- Integration of Acurast TEE with Soroban, enabling secure and trust-minimized access to Web2 data. [Integration code or repo](#)
+- A published guide detailing the Acurast-Soroban integration process. [Read the article](#)
 
-## Resubmission Feedback:
+On the insurance front, we’ve made strong progress validating real use cases and building functional prototypes:
+
+- A working **Flight Delay Insurance UI** is live and ready for testing. [View UI](#)
+- We’ve also built a **Fire Insurance prototype** for the Build on Stellar Hackathon, using NASA’s FIRMS API and satellite fire data. This demonstrates that with a reliable oracle, we can launch effective parametric insurance products across multiple verticals. [Project link](#)
+- We’re currently in conversations with two other teams interested in building on our framework:
+  - One of them is building **crop insurance** for weather-related risks in Africa and applying to the next Kickstart round. [Team/project link](#)
+- Additionally, we conducted **over a dozen user interviews** during ETHDenver 2025 with both insurance buyers and DeFi yield providers, helping us validate product-market fit across both user groups.
+
+On the insurance front, we’ve made strong progress validating real use cases and building functional prototypes:
+
+- A working **Flight Delay Insurance UI** is live and ready for testing. [View UI](#)
+- We’ve also built a **Fire Insurance prototype** for the Build on Stellar Hackathon, using NASA’s FIRMS API and satellite fire data. This demonstrates that with a reliable oracle, we can launch effective parametric insurance products across multiple verticals. [Project link](#)
+- We’re currently in conversations with two other teams interested in building on our framework:
+  - One of them is building **crop insurance** for weather-related risks in Africa and applying to the next Kickstart round. [Team/project link](#)
+- Additionally, we conducted **over a dozen user interviews** during ETHDenver 2025 with both insurance buyers and DeFi yield providers, helping us validate product-market fit across both user groups.
+- We also performed **preliminary Monte Carlo simulations** to explore sustainable yield generation for counterparty investors:
+  - For **Flight Insurance**, simulations show a median yield of **50%** with a 3-hour delay threshold and flight delay probabilities ranging from 1% to 10%.
+  - For **Fire Insurance**, simulations show a median yield of **50–220%** in areas with prior wildfire activity, assuming wildfire probabilities between **0.3% and 1.7%**. [Yield analysis](#)
+
+With the **Build Award**, we aim to go beyond the developer and infrastructure side and focus on bringing real users into the ecosystem. This includes both **insurance buyers** and **counterparty investors**, helping us test live risk markets and validate sustainable yield at scale.
 
 ## Technical Architecture
-**Link** 
+
+https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 ## Thumbnail: *
 
