@@ -81,9 +81,9 @@ With the **Build Award**, we aim to go beyond the developer and infrastructure s
 
 https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
-## Thumbnail: *
+## Thumbnail: 
 
-![alt text](image.png)
+![alt text](images/thumbnail.png)
 
 ## SCF Build Tranche Deliverables
 
