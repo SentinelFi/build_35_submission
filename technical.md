@@ -104,6 +104,71 @@ While this setup is not scalable, it was sufficient to validate the end-to-end i
 
 ## 🔗 What’s Next: Build Award Focus
 
-With core components working in isolation and in coordination, we are now focused on the following during the Build Award phase:
+Our initial design for Flight Insurance focused on simplicity—isolated markets and binary outcomes—to validate the core mechanics: vault deposits, oracle-triggered payouts, and liquidation logic. This structure successfully demonstrated the feasibility of on-chain insurance, but it also revealed key limitations that must be addressed before scaling into a production-ready platform.
 
-TODO!!
+- **Capital fragmentation**  
+  Investors are required to deposit into individual flight-specific markets, making it difficult to manage capital efficiently and leading to underutilized funds.
+
+- **All-or-nothing liquidation**  
+  When a flight is delayed beyond the threshold, the entire Risk Vault is liquidated. While functional for binary scenarios, this lacks the nuance required for real-world insurance, where partial or capped payouts are standard.
+
+This architecture behaves more like a prediction or betting market than a sustainable parametric insurance product. To move toward a robust, scalable framework, we propose the following key improvements:
+
+- Central Risk Vault Architecture  
+- Oracle Layer Enhancements
+- Automated Market Creation
+
+Let’s explore each in detail.
+
+
+### 🏛️ Central Risk Vault Architecture
+To address capital fragmentation and enable more scalable insurance logic, we are transitioning to a **Central Risk Vault Architecture**. Unlike the original 1:1 market structure—where each market required its own pair of Hedge and Risk Vaults—this upgraded design introduces a single, unified **Risk Vault** that services multiple Hedge Vaults.
+
+![alt text](images/central_hedge.png)
+
+Each new insurance market now only deploys a **Hedge Vault**, significantly reducing deployment overhead and simplifying capital flow. Risk investors deposit once into the central Risk Vault and gain diversified exposure across all active markets without needing to manage each individually.
+
+To make risk exposure predictable and safe for investors, the architecture supports **capped payouts**. Each Hedge Vault defines a maximum disbursement limit per claim. For example, a $10 premium might entitle the buyer to a $100 capped payout, regardless of the severity of the triggering event.
+
+This structure improves capital efficiency, simplifies the investor experience, and brings the architecture closer to traditional pooled insurance models—while maintaining the transparency and automation benefits of smart contracts.
+
+
+### 🛰️ Oracle Layer Enhancements
+
+In our original implementation, oracle data was sent directly to the Controller Contract. While simple, this approach limited scalability and made data access tightly coupled to specific contract interactions.
+
+To address this, we’re introducing a more modular and scalable **oracle pipeline**, inspired by Chainlink’s price feed architecture. As shown in the diagram, we’ve inserted a **Flight Data Aggregator Contract** between the oracle data source and the controller logic.
+
+![alt text](images/oracle_plus.png)
+
+- A **Node.js script running inside Acurast TEE** fetches flight data from the FlightAware API and pushes updates every N minutes to the aggregator contract on Soroban.
+- This contract stores the latest status for all tracked flights and acts as the canonical source of truth for downstream contracts.
+- The **Sentinel Controller Contract** can then request data for any specific flight as needed, triggered by keepers or liquidation bots.
+- This allows Sentinel markets to query flight status asynchronously, enabling better performance, reduced gas usage, and cleaner separation of concerns.
+
+By decoupling data ingestion from insurance contract logic, we create a reusable oracle layer. As long as a flight’s data is being actively aggregated, a new parametric insurance market can be launched on top of it without requiring changes to the data pipeline.
+
+This design supports broader scalability, simplifies deployment of new markets, and sets the stage for supporting other data types beyond flight delays.
+
+### ⚙️ Automated Market Creation
+
+To enable scalable, on-demand insurance markets, we’re introducing **automated market creation**. When a user initiates coverage for a specific flight, the protocol first checks if that flight is already tracked by the **Flight Data Aggregator**. If the data exists, the system automatically:
+
+- Deploys a new **Hedge Vault** linked to that flight
+- Registers the vault and associated market metadata with the **Controller Contract**
+- Connects the vault to the shared **Central Risk Vault**
+
+This approach allows a single Controller Contract to manage multiple active insurance markets in parallel. Each market is tied to its own Hedge Vault, but all share the same core logic, oracle interface, and payout mechanism—ensuring consistent execution and clean separation of capital.
+
+This automation unlocks:
+- Long-tail coverage with minimal manual setup
+- Dynamic market spin-up based on user demand
+- Simplified onboarding for new insurance buyers
+
+#### Re-evaluating Hedge Vault Architecture
+
+**Risk Vaults** are a strong fit for pooling counterparty funds—offering clarity, isolation, and scalability, the current Hedge Vault model may benefit from refinement. As part of the next phase, we plan to evaluate whether **Hedge Vaults** are the most effective structure for managing insurance buyer capital. 
+
+We’ll explore whether alternative mechanisms, such as dynamic pricing, streaming coverage, or pooled buyer tranches, could offer better user experience and capital efficiency for insurance buyers.
+
+This architectural review will be an important focus of the Build Award cycle as we continue evolving Sentinel Protocol toward production readiness.
