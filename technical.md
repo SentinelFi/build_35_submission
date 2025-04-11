@@ -1,19 +1,26 @@
 # Technical Architecture
 
+## Table of Contents
+
+- [Technical Architecture](#technical-architecture)
+  - [Kickstart Phase Progress](#kickstart-phase-progress)
+    - [Vault Standard on Soroban](#-vault-standard-on-soroban)
+    - [Hedge/Risk Market Implementation](#-hedgerisk-market-implementation)
+    - [Acurast Oracle Integration](#-acurast-oracle-integration)
+    - [Insurance Use Case: Flight Delay POC](#-insurance-use-case-flight-delay-poc)
+    - [Protocol Actors](#-protocol-actors)
+    - [Manual Market Creation](#-manual-market-creation)
+  - [What’s Next: Build Award Focus](#-whats-next-build-award-focus)
+    - [Central Risk Vault Architecture](#-central-risk-vault-architecture)
+    - [Oracle Layer Enhancements](#-oracle-layer-enhancements)
+    - [Automated Market Creation](#-automated-market-creation)
+    - [Re-evaluating Hedge Vault Architecture](#re-evaluating-hedge-vault-architecture)
+
  We're splitting the technical architecture document into two parts:  
  1. **Kickstart Progress** – everything we've accomplished since receiving the Kickstarter award  
  2. **Build Plan** – what we intend to develop once we receive the Build award  
 
  Feel free to jump to the sections you're most interested in below:
-
-- [Kickstart Phase Progress](#kickstart-phase-progress)
-  - [Vault Standard on Soroban](#vault-standard-on-soroban)
-  - [Hedge/Risk Market Implementation](#hedgerisk-market-implementation)
-  - [Acurast Oracle Integration](#acurast-oracle-integration)
-  - [Insurance Use Case: Flight Delay POC](#insurance-use-case-flight-delay-poc)
-  - [Hedge Market Frontend](#poc-frontend)
-- [Build Phase Plans](#build-phase-additions)
-
 
 ## Kickstarter Phase Progress
 
