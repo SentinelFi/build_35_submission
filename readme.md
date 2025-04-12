@@ -105,7 +105,7 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 #### 3. Vault Standardization – $4,800
 - Finalize our internally complete Vault logic for external adoption, including documentation, usage examples, and a developer-facing article to support broader integration across the Soroban ecosystem.
-- Submit the contract to the OpenZeppelin Soroban Contracts library as a reusable DeFi primitive. ( We already started the process)
+- Submit the contract to the OpenZeppelin Soroban Contracts library as a reusable DeFi primitive. (We already started the process)
 - Propose the Vault as a Soroban Ecosystem Proposal (SEP) on the Standards track for potential endorsement by the Stellar Development Foundation (SDF).
 
 - **Timeline:** 7-8 weeks after receiving funds  
@@ -226,7 +226,7 @@ We have an ambitious goal: to disrupt the parametric insurance market by leverag
 
 * Launch domain-specific verticals (e.g. wildfire protection in California, hail damage in the Midwest) based on real-world demand and high-risk conditions.
 
-* Partner with influencers and climate advocacy groups to raise awareness and drive adoption of insurance products targeting climate-related risks and extreme weather events.*
+* Partner with influencers and climate advocacy groups to raise awareness and drive adoption of insurance products targeting climate-related risks and extreme weather events.
 
 * Offer capital incentives to early insurance underwriters, particularly in new markets with high yield potential.
 
