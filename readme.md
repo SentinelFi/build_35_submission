@@ -222,7 +222,7 @@ We have an ambitious goal: to disrupt the parametric insurance market by leverag
 
 ### 📈 Ideas to Capture Market Share
 
-* Target flight insurance for major crypto events like Token2049, ETHDenver, and Devcon—where crypto-native travelers are highly concentrated. Explore partnerships with ETHGlobal to include our coverage in their “Hacker Pack” or “City Pack” offerings.
+* Target flight insurance for major crypto events like Token2049, ETHDenver, and Devcon—where crypto-native travelers are highly concentrated. Explore partnerships with ETHGlobal to include our coverage in their “Hacker Pack” or “City Pack” offerings. Here's an example -  [Denver pack](https://ethglobal.com/packs/denver).
 
 * Form partnerships with travel platforms like Expedia to offer flight delay and weather-proof vacation insurance directly to travelers at the point of booking.
 
