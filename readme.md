@@ -38,7 +38,7 @@ Our market contract includes a configurable commission fee that allows the deplo
 In short, Sentinel Protocol provides the following: 
 
 - For the developer community:
-  - A reusable ERC-4626-style vault standard for any DeFi project on Soroban
+  - A reusable ERC-4626 style vault standard for any DeFi project on Soroban
   - Oracle integration using Acurast TEE to securely fetch Web2 API data
     - Among the first implementations bringing Acurast to Soroban
     -  Expands oracle capabilities beyond on-chain asset prices (e.g., flight data, fire zones)
@@ -90,7 +90,7 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 ## SCF Build Tranche Deliverables
 
-*Note: Our development team is primarily based in the Seattle area, so we based our budget estimates on the lower end of salary data for two developers in the greater Seattle region, using figures from both [Levels.Fyi](https://www.levels.fyi/t/software-engineer/locations/greater-seattle-area) and [Glassdoor](https://www.glassdoor.com/Salaries/seattle-wa-software-engineer-salary-SRCH_IL.0,10_IM781_KO11,28.htm).*
+*Note: Our development team is primarily based in the Seattle area, so we based our budget estimates on the median estimates from [Glassdoor](https://www.glassdoor.com/Salaries/seattle-wa-software-engineer-salary-SRCH_IL.0,10_IM781_KO11,28.htm) for two developers in the greater Seattle region.*
 
 ### Tranche 1 – MVP *
 - **Total Budget:** $41,600  
