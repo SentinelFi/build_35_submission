@@ -18,22 +18,20 @@ https://github.com/SentinelFi#-sentinel-protocol-repositories
 
 ## Products & Services
 
-**Sentinel Protocol** is a parametric insurance framework built on the **Soroban blockchain**. It is designed to provide trustless, automated, and transparent coverage for real-world risk markets. The protocol connects individuals seeking protection with DeFi investors who underwrite risk in exchange for yield, using smart contracts and decentralized oracles to automate claims and remove intermediaries. Traditional insurance is often opaque and slow, with manual processes and unclear terms. Sentinel solves this by making every step from policy creation to payout fully transparent, data-driven, and executed on-chain without the need for intermediaries or administrative overhead.
+Traditional indemnity insurance is pulling back in the face of rising climate risks. In 2024, climate-related disasters caused **94 billion dollars** in U.S. losses, according to [NOAA](https://www.ncei.noaa.gov/access/billions/summary-stats). Major insurers like **State Farm**, **Allstate**, and **Farmers** have exited or paused new business in states like California. **Chubb**, **Travelers**, and **USAA** each reported over **1 billion dollars** in wildfire-related losses. As a result, **parametric insurance** is gaining traction as a faster and more transparent alternative. The **California State Assembly** recognized its potential in a recent [insurance reform report](https://ains.assembly.ca.gov/system/files/2024-10/10.9.24-background.pdf).
 
-The protocol is modular and supports any risk vertical where reliable oracle data is available—such as flight delays, wildfires, or weather events. Claims are executed automatically through Soroban contracts based on real-world data, ensuring fairness and speed for both users and underwriters.
+**Sentinel Protocol** is a modular parametric insurance framework built on the **Soroban blockchain**. It connects users seeking protection with DeFi investors who underwrite risk in exchange for yield. Smart contracts and decentralized oracles automate claims and payouts, removing intermediaries and ensuring transparency at every step.
 
-Our first insurance vertical is **Flight Delay Insurance**, which pays users automatically if their flight is delayed beyond a defined threshold (e.g., 6 hours). This product will launch on **Testnet**, followed by a **Closed Beta on Mainnet**. It features a user-friendly UI for travelers to easily purchase coverage, and a dashboard for risk vault investors to underwrite policies and earn yield. The beta will be open to community members for testing before the full public release.
+The protocol can support any real-world risk where reliable oracle data is available. Our first product is **Flight Delay Insurance**, which pays users automatically if their flight is delayed beyond a set threshold. The product launches first on **Testnet**, followed by a **Closed Beta on Mainnet**, with a streamlined user interface for travelers and a dashboard for capital providers.
 
-We got our start with the **Kickstart Grant**, where we built and validated the early foundations of **Sentinel Protocol**. While we’ve made strong progress, there’s still a lot of work ahead. You can find a detailed overview of what we’ve accomplished so far, and what we plan to build next, in the [Technical section](https://github.com/SentinelFi/build_35_submission/blob/main/technical.md).
+We began with the **Kickstart Grant**, which helped us validate Sentinel’s technical foundation. While we have made meaningful progress, there is still much to build. You can find a detailed update on our technical progress and roadmap in the [Technical section](https://github.com/SentinelFi/build_35_submission/blob/main/technical.md).
 
 Built natively on Soroban, Sentinel Protocol uses:
 - **Soroban Smart Contracts** to automate all core operations including deposits, claims, and payouts.
 - **Acurast Trusted Execution Environment (TEE)** to deliver real-time, tamper-resistant data to the blockchain.
 - **Stellar SDKs** are used to connect **liquidation bots** and **keepers** that advance the protocol's state and coordinate interactions seamlessly.
 
-We are open-sourcing the entire Sentinel Protocol framework and contributing reusable components to the broader Soroban developer community. These include modular vault standards inspired by ERC-4626, oracle pipelines to connect Web2 data to Soroban in a trust-minimized way, and liquidation bots and keepers to manage automated operations. We’re also releasing comprehensive documentation, tutorials, and videos to support developers who want to build with Sentinel or extend its components for other DeFi applications.
-
-The framework itself is designed to be adaptable and reusable, making it easy to launch new parametric insurance products across different risk markets. Our goal is to help disrupt the opaque and outdated insurance industry, and we actively encourage other developers to build their own parametric insurance protocols on top of Sentinel.
+We are open-sourcing the **Sentinel Protocol** framework to support the Soroban developer community, offering reusable components like modular vaults, oracle pipelines for Web2 data, and automation tools such as liquidation bots and keepers. Alongside this, we’re releasing documentation, tutorials, and videos to help others build or extend Sentinel for new DeFi use cases. The framework is flexible and designed for easy deployment of parametric insurance products across diverse risk markets, with the goal of disrupting traditional insurance and enabling others to build on top of it.
 
 In short, Sentinel Protocol provides the following: 
 
@@ -57,27 +55,26 @@ In short, Sentinel Protocol provides the following:
 
 ## Traction Evidence: 
 
-Since receiving the Kickstart Grant, we’ve made meaningful technical progress on the Sentinel Protocol framework, laying the foundation for decentralized parametric insurance on Soroban. Highlights include:
+The global **parametric insurance market** was valued at **16.2 billion USD** in 2024 and is projected to grow at a **12.6 percent CAGR** through 2034, according to [Global Market Insights](https://www.gminsights.com/industry-analysis/parametric-insurance-market). Our first product targets the **flight delay insurance market**, valued at **1.37 billion USD** in 2024 and expected to reach **4.01 billion USD** by 2033, growing at **14.5 percent CAGR**, per [Business Research Insights](https://www.businessresearchinsights.com/market-reports/flight-delay-insurance-market-113081). We aim to capture early market share by getting real users into live parametric markets—starting with **Flight Delay Insurance**. 
 
-- Implementation of our ERC-4626-style vault standard, designed for modular use across DeFi applications. [View the repo](#)
-- Ongoing work to integrate the vault standard as an extension of OpenZeppelin’s token library on Soroban, in collaboration with the OpenZeppelin team. [Discussion or PR link](#)
-- Integration of Acurast TEE with Soroban, enabling secure and trust-minimized access to Web2 data. [Integration code or repo](#)
-- A published guide detailing the Acurast-Soroban integration process. [Read the article](#)
+Since receiving the Kickstart Grant, we’ve made strong technical progress on **Sentinel Protocol**, a modular, on-chain insurance framework built on **Soroban**.
 
-On the insurance front, we’ve made strong progress validating real use cases and building functional prototypes:
+Highlights include:
+- Built a modular ERC-4626-style vault standard. [View the repo](#)  
+- Collaborating with OpenZeppelin to contribute the vault to their Soroban token library. [Discussion or PR](#)  
+- Integrated Acurast TEE with Soroban for secure Web2 data feeds. [Integration code](#)  
 
-- A working **Flight Delay Insurance UI** is live and ready for testing. [View UI](#)
-- We’ve also built a **Fire Insurance prototype** for the Build on Stellar Hackathon, using NASA’s FIRMS API and satellite fire data. This demonstrates that with a reliable oracle, we can launch effective parametric insurance products across multiple verticals. [Project link](#)
-- We’re currently in conversations with two other teams interested in building on our framework:
-  - One of them is building **crop insurance** for weather-related risks in Africa and applying to the next Kickstart round. [Team/project link](#)
-- Additionally, we conducted **over a dozen user interviews** during ETHDenver 2025 with both insurance buyers and DeFi yield providers, helping us validate product-market fit across both user groups.
+We’ve also validated real use cases and built functional prototypes:
+- General Hedge and Risk Market UI built and ready for testing, designed to support multiple parametric insurance markets including Flight Delay Insurance. [View UI](#)  
+- Fire Insurance prototype using NASA FIRMS satellite data. [Project link](#)  
+- Engaged with teams building crop insurance and other verticals on Sentinel. [Team link](#)  
+- Conducted 12+ user interviews at ETHDenver 2025 with DeFi yield seekers and insurance buyers.
 
+Early simulations suggest strong yield potential for risk investors:
+- Flight Delay Insurance shows median yields of 50% with a 3-hour delay threshold.  [Yield analysis](#) 
+- Fire Insurance shows yields of 50–220% in high-risk zones. [Yield analysis](#)
 
-We also performed **preliminary Monte Carlo simulations** to explore sustainable yield generation for counterparty investors:
-  - For **Flight Insurance**, simulations show a median yield of **50%** with a 3-hour delay threshold and flight delay probabilities ranging from 1% to 10%.
-  - For **Fire Insurance**, simulations show a median yield of **50–220%** in areas with prior wildfire activity, assuming wildfire probabilities between **0.3% and 1.7%**. [Yield analysis](#)
-
-With the **Build Award**, we aim to go beyond the developer and infrastructure side and focus on bringing real users into the ecosystem. This includes both **insurance buyers** and **counterparty investors**, helping us test live risk markets and validate sustainable yield at scale.
+With the Build Award, we will complete the remaining infrastructure and then shift our focus to onboarding insurance buyers and capital providers—testing live markets, validating sustainable yields, and accelerating real-world adoption.
 
 ## Technical Architecture
 
@@ -239,8 +236,4 @@ We have an ambitious goal: to disrupt the parametric insurance market by leverag
 - Flight Delay Insurance is live as a Closed Beta on Soroban mainnet, built on top of Sentinel Protocol—an on-chain, trustless, and automated parametric insurance framework.  
 - Investors gain access to real-world asset (RWA) yield opportunities through flight insurance markets, backed by a detailed yield study demonstrating capital sustainability.  
 - Developers benefit from a standardized Vault primitive and a modular oracle pipeline for bringing verifiable Web2 non-financial data on-chain via Acurast TEEs.
-- The protocol is ready to onboard other teams building insurance products in new verticals, including fire coverage, hail damage, crop yield protection, and earthquake insurance.
-
-## Reference 
-
-N/A 
+- The protocol is ready to onboard other teams building insurance products in new verticals, including fire coverage, hail damage, crop yield protection, and earthquake insurance. 
