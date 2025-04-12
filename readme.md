@@ -162,7 +162,7 @@ Deploy a permissionless **Vault Factory Contract** to allow anyone to launch Hed
 
 - Develop an open-source **Liquidation Bot**, including a working example that anyone can run to monitor oracle data and trigger claims. [More in our technical documentation](#)
 
-- Add Protocol level incentives for people tp run these bots.
+- Add Protocol level incentives for people to run these bots.
 
 * Explore decentralized automation using **Acurast TEEs** to replace centralized cron jobs with trust-minimized, off-chain keepers.
 
@@ -187,9 +187,9 @@ Deploy a permissionless **Vault Factory Contract** to allow anyone to launch Hed
 -  Address and implement all audit findings, update documentation, and finalize deployment configurations to prepare for mainnet launch. 
 - **Timeline:** 6 months after receiving funds  
 
-- **Completion Criteria:** We will successfully pass the audit with support from **Stellar LaunchKit**, having resolved all critical and high-risk issues. We also would have deployed all our contract on Mainnet and have launched a Clsoed Beta.
+- **Completion Criteria:** We will successfully pass the audit with support from **Stellar LaunchKit**, having resolved all critical and high-risk issues. We also would have deployed all our contracts on Mainnet and have launched a Closed Beta.
 
-*Note: The budget hereto meet audit standards (not the audit cost itself), it is also to fix audit issues as the arise*
+*Note: The budget hereto meet audit standards (not the audit cost itself), it is also to fix audit issues as they arise*
 
 ## Budget
 138,400
