@@ -214,7 +214,7 @@ We have an ambitious goal: to disrupt the parametric insurance market by leverag
 
 * Integrate Reclaim Protocol or similar zkTLS frameworks to enable zero-knowledge proofs of personhood and actions like flight ticket purchases. 
 
-* Join accelerators like Draper University, Tachyon, or a16z Crypto Startup School to raise funding, expand our network, and grow the team.
+* Join accelerators like Draper University, Tachyon, or a16z Crypto Startup School to raise funding, and grow the team for accelerated development.
 
 * Explore additional TEE platforms like Phala Network and Lit Protocol to ensure flexibility and long-term reliability beyond Acurast.
 
