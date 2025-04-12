@@ -165,7 +165,8 @@ Deploy a permissionless **Vault Factory Contract** to allow anyone to launch Hed
 - **Completion Criteria:**  Full protocol deployed on testnet with manual testing verified through the UI and an automated E2E test suite executed covering all critical flows, confirming system readiness for mainnet.
 
 ### Tranche 3 – Mainnet
-**Total Budget:** $41,600
+- **Total Budget:** $41,600
+- **Timeline:** 5-6 months after receiving funds 
 
 #### 1. Liquidation and Keeper Bots – $12,800
 
