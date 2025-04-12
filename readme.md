@@ -1,3 +1,5 @@
+![alt text](images/readme_cover.png)
+
 # Sentinel Protocol
 
 ## Submission Title 

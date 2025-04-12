@@ -1,3 +1,4 @@
+![alt text](images/technical_cover.png)
 # Technical Architecture
 
 ## Table of Contents
