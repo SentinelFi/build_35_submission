@@ -180,3 +180,21 @@ This automation unlocks:
 We’ll explore whether alternative mechanisms, such as dynamic pricing, streaming coverage, or pooled buyer tranches, could offer better user experience and capital efficiency for insurance buyers.
 
 This architectural review will be an important focus of the Build Award cycle as we continue evolving Sentinel Protocol toward production readiness.
+
+### 🤖 Liquidation Bots and Keepers
+
+To trigger key actions in the Sentinel Protocol, such as verifying oracle data, distributing payouts, or rotating epochs, we use automation agents like Liquidation Bots and Keepers. These agents continuously monitor conditions and execute transactions when specific events occur.
+
+In our current proof of concept, we started with a centralized setup using cron jobs and Node.js scripts running on internal infrastructure. This allowed us to test critical flows, including oracle verification and payout execution, in a controlled environment.
+
+As we evolve the system, we plan to move toward a fully decentralized and community-operated automation layer. This will include:
+
+- Open source Liquidation Bots that anyone can run
+- Incentives for executing valid transactions on time
+- Public documentation to help contributors easily set up and operate bots
+
+In ecosystems like Ethereum, automation is handled by mature services such as [Chainlink Keepers](https://docs.chain.link/chainlink-automation/overview/getting-started), which allow trustless execution of on-chain functions. However, **Stellar does not currently have a native automation system** like this.
+
+To address this, we are exploring the use of **Acurast Trusted Execution Environments** to run keeper-like logic off-chain and submit transactions back to Soroban. We have already confirmed that this is technically feasible. The next step is to evaluate the **infrastructure cost and reliability** of using Acurast for production-grade task automation.
+
+This experiment will help us build a robust and decentralized automation layer that ensures timely settlement and event-driven execution across all Sentinel risk markets.

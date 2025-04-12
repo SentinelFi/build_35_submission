@@ -1,4 +1,4 @@
-![alt text](images/readme_cover.png)
+![alt text](images/cover.png)
 
 # Sentinel Protocol
 
@@ -90,6 +90,7 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 ## SCF Build Tranche Deliverables
 
 ### Tranche 1 - MVP: *
+
 ### Tranche 2 - Testnet: *
 ### Tranche 1 - Mainnet: *
 
