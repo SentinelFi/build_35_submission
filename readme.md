@@ -5,7 +5,7 @@
 ## Submission Title 
 Parametric Insurance Framework and Flight Insurance Beta Launch
 
-## One Sentence Description: (130 characteres)
+## One Sentence Description: (130 characters)
 Parametric insurance framework for any risk market with reliable oracles to automate payouts with smart contracts.
 
 ## Project URL:
@@ -29,7 +29,7 @@ We began with the **Kickstart Grant**, which helped us validate Sentinel’s tec
 Built natively on Soroban, Sentinel Protocol uses:
 - **Soroban Smart Contracts** to automate all core operations including deposits, claims, and payouts.
 - **Acurast Trusted Execution Environment (TEE)** to deliver real-time, tamper-resistant data to the blockchain.
-- **Stellar SDKs** are used to connect **liquidation bots** and **keepers** that advance the protocol's state and coordinate interactions seamlessly.
+- **Stellar SDKs** used to connect **liquidation bots** and **keepers** that advance the protocol's state and coordinate interactions seamlessly.
 
 We are open-sourcing the **Sentinel Protocol** framework to support the Soroban developer community, offering reusable components like modular vaults, oracle pipelines for Web2 data, and automation tools such as liquidation bots and keepers. Alongside this, we’re releasing documentation, tutorials, and videos to help others build or extend Sentinel for new DeFi use cases. The framework is flexible and designed for easy deployment of parametric insurance products across diverse risk markets, with the goal of disrupting traditional insurance and enabling others to build on top of it.
 
@@ -39,7 +39,7 @@ In short, Sentinel Protocol provides the following:
   - A reusable ERC-4626-style vault standard for any DeFi project on Soroban
   - Oracle integration using Acurast TEE to securely fetch Web2 API data
     - Among the first implementations bringing Acurast to Soroban
-    -  Expands oracle capabilities beyond on-chain asset prices (e.g. flight data, fire zones)
+    -  Expands oracle capabilities beyond on-chain asset prices (e.g., flight data, fire zones)
   - Example liquidation bots and keepers to automate contract state progression
   - Full developer support with documentation, tutorials, and example integrations
 
@@ -105,7 +105,7 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 #### 3. Vault Standardization – $4,800
 - Finalize our internally complete Vault logic for external adoption, including documentation, usage examples, and a developer-facing article to support broader integration across the Soroban ecosystem.
-- Submit the contract to the OpenZeppelin Soroban Contracts library as a reusable DeFi primitive. ( We already started the process)
+- Submit the contract to the OpenZeppelin Soroban Contracts library as a reusable DeFi primitive. (We already started the process)
 - Propose the Vault as a Soroban Ecosystem Proposal (SEP) on the Standards track for potential endorsement by the Stellar Development Foundation (SDF).
 
 - **Timeline:** 7-8 weeks after receiving funds  
@@ -162,7 +162,7 @@ Deploy a permissionless **Vault Factory Contract** to allow anyone to launch Hed
 
 - Develop an open-source **Liquidation Bot**, including a working example that anyone can run to monitor oracle data and trigger claims. [More in our technical documentation](#)
 
-- Add Protocol level incentives for people tp run these bots.
+- Add Protocol level incentives for people to run these bots.
 
 * Explore decentralized automation using **Acurast TEEs** to replace centralized cron jobs with trust-minimized, off-chain keepers.
 
@@ -187,9 +187,9 @@ Deploy a permissionless **Vault Factory Contract** to allow anyone to launch Hed
 -  Address and implement all audit findings, update documentation, and finalize deployment configurations to prepare for mainnet launch. 
 - **Timeline:** 6 months after receiving funds  
 
-- **Completion Criteria:** We will successfully pass the audit with support from **Stellar LaunchKit**, having resolved all critical and high-risk issues. We also would have deployed all our contract on Mainnet and have launched a Clsoed Beta.
+- **Completion Criteria:** We will successfully pass the audit with support from **Stellar LaunchKit**, having resolved all critical and high-risk issues. We also would have deployed all our contracts on Mainnet and have launched a Closed Beta.
 
-*Note: The budget hereto meet audit standards (not the audit cost itself), it is also to fix audit issues as the arise*
+*Note: The budget hereto meet audit standards (not the audit cost itself), it is also to address audit issues as they arise*
 
 ## Budget
 138,400
@@ -226,7 +226,7 @@ We have an ambitious goal: to disrupt the parametric insurance market by leverag
 
 * Launch domain-specific verticals (e.g. wildfire protection in California, hail damage in the Midwest) based on real-world demand and high-risk conditions.
 
-* Partner with influencers and climate advocacy groups to raise awareness and drive adoption of insurance products targeting climate-related risks and extreme weather events.*
+* Partner with influencers and climate advocacy groups to raise awareness and drive adoption of insurance products targeting climate-related risks and extreme weather events.
 
 * Offer capital incentives to early insurance underwriters, particularly in new markets with high yield potential.
 
@@ -236,4 +236,4 @@ We have an ambitious goal: to disrupt the parametric insurance market by leverag
 - Flight Delay Insurance is live as a Closed Beta on Soroban mainnet, built on top of Sentinel Protocol—an on-chain, trustless, and automated parametric insurance framework.  
 - Investors gain access to real-world asset (RWA) yield opportunities through flight insurance markets, backed by a detailed yield study demonstrating capital sustainability.  
 - Developers benefit from a standardized Vault primitive and a modular oracle pipeline for bringing verifiable Web2 non-financial data on-chain via Acurast TEEs.
-- The protocol is ready to onboard other teams building insurance products in new verticals, including fire coverage, hail damage, crop yield protection, and earthquake insurance. 
+- The protocol is ready to onboard other teams building insurance products in new verticals, including but not limited to fire coverage, hail damage, crop yield protection, and earthquake insurance. 
