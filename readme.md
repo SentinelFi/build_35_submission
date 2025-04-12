@@ -90,8 +90,6 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 ## SCF Build Tranche Deliverables
 
-*Note: Our development team is primarily based in the Seattle area, so we based our budget estimates on the median estimates from [Glassdoor](https://www.glassdoor.com/Salaries/seattle-wa-software-engineer-salary-SRCH_IL.0,10_IM781_KO11,28.htm) for two developers in the greater Seattle region.*
-
 ### Tranche 1 – MVP *
 - **Total Budget:** $41,600  
 - **Timeline:** 6-7 weeks after receiving funds 
