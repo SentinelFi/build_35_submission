@@ -90,7 +90,7 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 ## SCF Build Tranche Deliverables
 
-*Note: Our development team is primarily based in the Seattle area, so we based our budget estimates on the median salaries of two developers located in the greater Seattle region. (80/hr)* 
+*Note: Our development team is primarily based in the Seattle area, so we based our budget estimates on the median salaries of two developers located in the greater Seattle region* 
 
 ### Tranche 1 – MVP *
 - **Total Budget:** $41,600  
