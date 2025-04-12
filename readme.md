@@ -5,7 +5,7 @@
 ## Submission Title 
 Parametric Insurance Framework and Flight Insurance Beta Launch
 
-## One Sentence Description: (130 characteres)
+## One Sentence Description: (130 characters)
 Parametric insurance framework for any risk market with reliable oracles to automate payouts with smart contracts.
 
 ## Project URL:
@@ -29,7 +29,7 @@ We began with the **Kickstart Grant**, which helped us validate Sentinel’s tec
 Built natively on Soroban, Sentinel Protocol uses:
 - **Soroban Smart Contracts** to automate all core operations including deposits, claims, and payouts.
 - **Acurast Trusted Execution Environment (TEE)** to deliver real-time, tamper-resistant data to the blockchain.
-- **Stellar SDKs** are used to connect **liquidation bots** and **keepers** that advance the protocol's state and coordinate interactions seamlessly.
+- **Stellar SDKs** used to connect **liquidation bots** and **keepers** that advance the protocol's state and coordinate interactions seamlessly.
 
 We are open-sourcing the **Sentinel Protocol** framework to support the Soroban developer community, offering reusable components like modular vaults, oracle pipelines for Web2 data, and automation tools such as liquidation bots and keepers. Alongside this, we’re releasing documentation, tutorials, and videos to help others build or extend Sentinel for new DeFi use cases. The framework is flexible and designed for easy deployment of parametric insurance products across diverse risk markets, with the goal of disrupting traditional insurance and enabling others to build on top of it.
 
@@ -39,7 +39,7 @@ In short, Sentinel Protocol provides the following:
   - A reusable ERC-4626-style vault standard for any DeFi project on Soroban
   - Oracle integration using Acurast TEE to securely fetch Web2 API data
     - Among the first implementations bringing Acurast to Soroban
-    -  Expands oracle capabilities beyond on-chain asset prices (e.g. flight data, fire zones)
+    -  Expands oracle capabilities beyond on-chain asset prices (e.g., flight data, fire zones)
   - Example liquidation bots and keepers to automate contract state progression
   - Full developer support with documentation, tutorials, and example integrations
 
@@ -189,7 +189,7 @@ Deploy a permissionless **Vault Factory Contract** to allow anyone to launch Hed
 
 - **Completion Criteria:** We will successfully pass the audit with support from **Stellar LaunchKit**, having resolved all critical and high-risk issues. We also would have deployed all our contracts on Mainnet and have launched a Closed Beta.
 
-*Note: The budget hereto meet audit standards (not the audit cost itself), it is also to fix audit issues as they arise*
+*Note: The budget hereto meet audit standards (not the audit cost itself), it is also to address audit issues as they arise*
 
 ## Budget
 138,400
