@@ -8,6 +8,7 @@
     - [Vault Standard on Soroban](#-vault-standard-on-soroban)
     - [Hedge/Risk Market Implementation](#-hedgerisk-market-implementation)
     - [Acurast Oracle Integration](#-acurast-oracle-integration)
+    - [Contract Sequence Diagram](#contract-sequence-diagram)
     - [Insurance Use Case: Flight Delay POC](#-insurance-use-case-flight-delay-poc)
     - [Protocol Actors](#-protocol-actors)
     - [Manual Market Creation](#-manual-market-creation)
@@ -70,6 +71,49 @@ A key innovation of our Kickstarter phase was integrating **Acurast Oracles** in
 ![alt text](images/oracle.png)
 
 This allowed us to forward real-world data into Soroban **securely and without centralized servers**, aligning with the trust-minimization goals of the protocol.
+
+### Contract Sequence Diagram
+
+The Sentinel Smart Contracts are the core of the system, facilitating the interactions between hedge buyers, risk buyers, and liquidators. The following sequence diagram outlines how these actors and smart contracts interact step by step:
+
+```mermaid
+sequenceDiagram
+    participant Hedge Buyer
+    participant Hedge Vault
+    participant Controller Contract
+    participant Risk Vault
+    participant Risk Buyer
+    participant Liquidator
+
+    Hedge Buyer ->> Hedge Vault: 1. Deposit in Hedge Vault
+    Hedge Vault ->> Hedge Buyer: 2. Get Hedge Shares
+    Risk Buyer ->> Risk Vault: 3. Deposit in Risk Vault
+    Risk Vault ->> Risk Buyer: 4. Get Risk Shares
+    
+    Liquidator -->> Controller Contract: 5. Trigger Liquidate if conditions met
+    
+    Risk Vault -->> Hedge Vault: 6. Risk Collateral transferred to Hedge
+    Liquidator -->> Controller Contract: 7. Trigger Mature if Epoch ends w/o liquidation
+    Hedge Vault -->> Risk Vault: 8. Hedge Collateral transferred to Risk
+
+    Hedge Vault ->> Hedge Buyer: 9. Hedge Buyers Withdraw Funds
+    Risk Vault ->> Risk Buyer: 10. Risk Buyers Withdraw Funds
+```
+
+1. **Hedge Buyer** deposits in **Hedge Vault**.
+2. **Hedge Buyer** receives **Hedge Shares** representing their ownership in the Hedge Vault.
+3. **Risk Buyer** deposits in **Risk Vault**.
+4. **Risk Buyer** receives **Risk Shares** representing their ownership in the Risk Vault.
+5. **Liquidation** is triggered if conditions are met, typically by a **Liquidator** monitoring external conditions (e.g., flight delays).
+   - If liquidation occurs: 
+     - **Risk collateral** is transferred to the **Hedge Vault**.
+6. If no liquidation occurs and the **epoch ends**, the liquidator triggers a **maturity event**.
+   - If maturity is triggered:
+     - **Hedge collateral** is transferred to the **Risk Vault**.
+7. **Hedge Buyers** withdraw their funds from the **Hedge Vault**.
+8. **Risk Buyers** withdraw their funds from the **Risk Vault**.
+
+This process ensures a trustless and automated mechanism for managing the flow of funds between the Hedge and Risk Vaults, depending on whether the conditions for liquidation or maturity are met.
 
 
 ### 🛡️ Insurance Use Case: Flight Delay POC
