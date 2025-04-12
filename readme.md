@@ -236,4 +236,4 @@ We have an ambitious goal: to disrupt the parametric insurance market by leverag
 - Flight Delay Insurance is live as a Closed Beta on Soroban mainnet, built on top of Sentinel Protocol—an on-chain, trustless, and automated parametric insurance framework.  
 - Investors gain access to real-world asset (RWA) yield opportunities through flight insurance markets, backed by a detailed yield study demonstrating capital sustainability.  
 - Developers benefit from a standardized Vault primitive and a modular oracle pipeline for bringing verifiable Web2 non-financial data on-chain via Acurast TEEs.
-- The protocol is ready to onboard other teams building insurance products in new verticals, including fire coverage, hail damage, crop yield protection, and earthquake insurance. 
+- The protocol is ready to onboard other teams building insurance products in new verticals, including but not limited to fire coverage, hail damage, crop yield protection, and earthquake insurance. 
