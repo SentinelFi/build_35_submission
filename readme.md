@@ -89,12 +89,113 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 ## SCF Build Tranche Deliverables
 
-### Tranche 1 - MVP: *
+### Tranche 1 – MVP *
+**Total Budget:** $48,800  
 
-### Tranche 2 - Testnet: *
-### Tranche 1 - Mainnet: *
+#### 1. Smart Contract & Architecture Changes – $19,200
+
+- Implement the **Central Risk Vault Architecture**, replacing per-market risk vaults with a single pooled vault that supports multiple Hedge Vaults, improving capital efficiency and investor exposure.  [More in our technical documentation](#)
+
+- Re-evaluate the **Hedge Vault design** to explore enhancements like dynamic pricing or pooled buyer tranches, aimed at optimizing capital use and user experience for insurance buyers.  
+
+- **Timeline:** 5-6 weeks after receiving funds  
+
+- **Completion Criteria:**  The new Controller contract and Market Maker have been deployed. New markets are now being created with individual Hedge Vaults, all connected to a single, centralized Risk Vault. The architecture is currently passing internal tests.
+
+#### 2. Purpose-Built Flight Delay Insurance Interface – $22,400  
+- **Timeline:** 7-8 weeks after receiving funds  
+- **Completion Criteria:** The UI for Flight Delay Insurance has been fully redesigned, moving away from a generalized Hedge/Risk Market interface to a purpose-built experience. Insurance Buyers and Risk Investors now have dedicated dashboards, offering intuitive deposit and withdrawal flows for investors, and a streamlined coverage purchase flow for buyers. Liquidation events and oracle-triggered data are clearly displayed, enhancing transparency across the system.
+
+#### 3. Vault Standardization – $4,800
+- Finalize our internally complete Vault logic for external adoption, including documentation, usage examples, and a developer-facing article to support broader integration across the Soroban ecosystem.
+- Submit the contract to the OpenZeppelin Soroban Contracts library as a reusable DeFi primitive. ( We already started the process)
+- Propose the Vault as a Soroban Ecosystem Proposal (SEP) on the Standards track for potential endorsement by the Stellar Development Foundation (SDF).
+
+- **Timeline:** 7-8 weeks after receiving funds  
+
+- **Completion Criteria:** Deployed contract, full documentation, and integration example and developer facing article.
+
+*Note: Timelines for OpenZeppelin and SDF endorsement are external and not under our control, but we will align with their guidelines and contribute actively.*
+
+#### 4. Acurast Oracle Integration - $2,400 
+- A key innovation from our Kickstarter phase was integrating **Acurast Oracles** with Soroban using **Trusted Execution Environments (TEEs)**. Unlike EVM ecosystems that offer solutions like Chainlink Functions, Soroban lacks native support for fetching Web2 data on-chain—this integration offers a viable alternative. As part of this milestone, we will publish documentation, example contracts, and a technical article to help developers bring verifiable Web2 API data into their Soroban smart contracts using Acurast.
+
+- **Timeline:** 2-3 weeks after receiving funds  
+
+- **Completion Criteria:** Full documentation, and integration example and developer facing article.
+
+### Tranche 2 – Testnet  
+**Total Budget:** $48,000  
+
+#### 1. Oracle Infrastructure Update – $19,200
+
+- Deploy a **Flight Data Aggregator Contract** to decouple data ingestion from the Controller, enabling scalable and reusable oracle feeds.
+
+- Set up an **Acurast TEE script** to fetch flight data of many flights and push updates to the aggregator, allowing Sentinel contracts to query flight status asynchronously for improved efficiency.  [More in our technical documentation](#)
+
+- **Timeline:** 14 -15 weeks after receiving funds 
+
+- **Completion Criteria:** A deployed contract that reliably holds aggregated flight data, with a modular pipeline in place that supports scalable integration of additional flight routes for future insurance markets.
+
+#### 2. Automate Market Creation – $16,000  
+
+- Implement logic to auto-deploy a new **Hedge Vault** when a user initiates coverage for a tracked flight, register it with the **Controller Contract**, and link it to the shared **Central Risk Vault**—enabling parallel, scalable insurance markets with minimal manual setup.  
+
+- Integrate this flow with the existing UI and build a **webhook trigger** that creates new markets in real-time as users purchase coverage.
+
+- **Timeline:** 12–13 weeks after receiving funds  
+Deploy a permissionless **Vault Factory Contract** to allow anyone to launch Hedge Vaults linked to the central Risk Vault.
+
+- **Completion Criteria:** A new Hedge Vault is automatically deployed, registered, and linked to the Central Risk Vault upon user purchase, with the process fully integrated into the UI and triggered via webhook.
+
+#### 3. Testnet Launch & E2E Testing – $12,800
+
+- Deploy the full Sentinel Protocol stack to testnet and perform **manual end-to-end testing via the UI**, including vault interactions, oracle events, and claim flows.  
+
+- Build and execute an **automated E2E test suite** covering deposits, withdrawals, oracle updates, payouts, and liquidation logic across key user scenarios.
+
+- **Timeline:** 15-16 weeks after receiving funds  
+
+- **Completion Criteria:**  Full protocol deployed on testnet with manual testing verified through the UI and an automated E2E test suite executed covering all critical flows, confirming system readiness for mainnet.
+
+### Tranche 3 – Mainnet
+**Total Budget:** $41,600
+
+#### 1. Liquidation and Keeper Bots – $12,800
+
+- Develop an open-source **Liquidation Bot**, including a working example that anyone can run to monitor oracle data and trigger claims. [More in our technical documentation](#)
+
+- Add Protocol level incentives for people tp run these bots.
+
+* Explore decentralized automation using **Acurast TEEs** to replace centralized cron jobs with trust-minimized, off-chain keepers.
+
+- **Timeline:** 19-20 weeks after receiving funds  
+
+- **Completion Criteria:**  - Automation flows no longer depend on centralized cron jobs, with at least one open-source bot live on testnet and Acurast-based keeper integration validated.
+
+
+#### 2. Yield Study – $12,800 
+- Expand our preliminary Monte Carlo simulation into a deeper study using real flight delay data from FlightAware and similar sources to assess vault profitability and capital efficiency.  
+
+-  Analyze high-traffic routes within the continental US to identify promising markets for insurance, estimating coverage amounts, expected payouts, and premium pricing based on delay frequency and passenger volume.
+
+ - **Timeline:** 9–10 weeks after receiving funds  
+
+- **Completion Criteria:**  We will produce a detailed analysis including median expected yield projections and identify at least **50 insurable routes** with recommended coverage and pricing parameters.
+
+
+#### 3. Mainnet Launch (Closed Beta) and Audit Pass Work – $16,000 
+- Conduct pre-audit reviews and internal security testing to prepare the Sentinel contracts for a professional third-party audit.  
+- Pass safety Audits with help from Stellar Launchkit.
+-  Address and implement all audit findings, update documentation, and finalize deployment configurations to prepare for mainnet launch. 
+- **Timeline:** 6 months after receiving funds  
+
+- **Completion Criteria:** We will successfully pass the audit with support from **Stellar LaunchKit**, having resolved all critical and high-risk issues. We also would have deployed all our contract on Mainnet and have launched a Clsoed Beta.
+
+*Note: The budget hereto meet audit standards (not the audit cost itself), it is also to fix audit issues as the arise*
 
 ## Budget
+138,400
 
 ## Go to Market 
 
