@@ -1,5 +1,3 @@
-![alt text](images/cover.png)
-
 # Sentinel Protocol
 
 **Please see our technical documentation here**
@@ -252,3 +250,5 @@ We have an ambitious goal: to disrupt the parametric insurance market by leverag
 - Investors gain access to real-world asset (RWA) yield opportunities through flight insurance markets, backed by a detailed yield study demonstrating capital sustainability.  
 - Developers benefit from a standardized Vault primitive and a modular oracle pipeline for bringing verifiable Web2 non-financial data on-chain via Acurast TEEs.
 - The protocol is ready to onboard other teams building insurance products in new verticals, including but not limited to fire coverage, hail damage, crop yield protection, and earthquake insurance. 
+
+![alt text](images/cover.png)
