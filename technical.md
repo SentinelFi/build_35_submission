@@ -1,6 +1,11 @@
 ![alt text](images/technical_cover.png)
 # Technical Architecture
 
+### Submission Video Links 
+ - [Loom](https://www.loom.com/share/a926c77762ed46669a0fa29b65a2c4ef?sid=b2456589-db6d-457d-b4b9-49569ea7fce7)
+ - [Vimeo](https://vimeo.com/1075023384)
+
+
 ## Table of Contents
 
 - [Technical Architecture](#technical-architecture)
