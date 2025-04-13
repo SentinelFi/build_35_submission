@@ -9,7 +9,6 @@
  - [Youtube](https://youtu.be/7APYa37jIIc)
 
 # Build round 35 Submission: 
-Here's a formatted  submission for build 35 round:
 
 ## Submission Title 
 Framework + Flight Beta
