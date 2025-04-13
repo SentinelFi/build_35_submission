@@ -2,8 +2,15 @@
 
 # Sentinel Protocol
 
-Please see our technical documentation here
+**Please see our technical documentation here**
 [Technical Documentation](https://github.com/SentinelFi/build_35_submission/blob/main/technical.md)
+
+### Submission Video Links 
+ - [Loom](https://www.loom.com/share/a926c77762ed46669a0fa29b65a2c4ef?sid=b2456589-db6d-457d-b4b9-49569ea7fce7)
+ - [Vimeo](https://vimeo.com/1075023384)
+ - [Youtube](https://youtu.be/7APYa37jIIc)
+
+Here's a formatted  submission for build 35 round:
 
 ## Submission Title 
 Parametric Insurance Framework and Flight Insurance Beta Launch
@@ -97,7 +104,7 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 #### 1. Smart Contract & Architecture Changes – $19,200
 
-- Implement the **Central Risk Vault Architecture**, replacing per-market risk vaults with a single pooled vault that supports multiple Hedge Vaults, improving capital efficiency and investor exposure.  [More in our technical documentation](#)
+- Implement the **Central Risk Vault Architecture**, replacing per-market risk vaults with a single pooled vault that supports multiple Hedge Vaults, improving capital efficiency and investor exposure.  [Technical Documentation](https://github.com/SentinelFi/build_35_submission/blob/main/technical.md#%EF%B8%8F-central-risk-vault-architecture)
 
 - Re-evaluate the **Hedge Vault design** to explore enhancements like dynamic pricing or pooled buyer tranches, aimed at optimizing capital use and user experience for insurance buyers.  
 
@@ -136,7 +143,7 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 - Deploy a **Flight Data Aggregator Contract** to decouple data ingestion from the Controller, enabling scalable and reusable oracle feeds.
 
-- Set up an **Acurast TEE script** to fetch flight data of many flights and push updates to the aggregator, allowing Sentinel contracts to query flight status asynchronously for improved efficiency.  [More in our technical documentation](#)
+- Set up an **Acurast TEE script** to fetch flight data of many flights and push updates to the aggregator, allowing Sentinel contracts to query flight status asynchronously for improved efficiency.  [Read More](https://github.com/SentinelFi/build_35_submission/blob/main/technical.md#%EF%B8%8F-oracle-layer-enhancements)
 
 - **Timeline:** 12-14 weeks after receiving funds 
 
@@ -144,7 +151,7 @@ https://github.com/SentinelFi/build_35_submission/blob/main/technical.md
 
 #### 2. Automate Market Creation – $16,000  
 
-- Implement logic to auto-deploy a new **Hedge Vault** when a user initiates coverage for a tracked flight, register it with the **Controller Contract**, and link it to the shared **Central Risk Vault**—enabling parallel, scalable insurance markets with minimal manual setup.  
+- Implement logic to auto-deploy a new **Hedge Vault** when a user initiates coverage for a tracked flight, register it with the **Controller Contract**, and link it to the shared **Central Risk Vault**—enabling parallel, scalable insurance markets with minimal manual setup.  [Read More](https://github.com/SentinelFi/build_35_submission/blob/main/technical.md#%EF%B8%8F-automated-market-creation)
 
 - Integrate this flow with the existing UI and build a **webhook trigger** that creates new markets in real-time as users purchase coverage.
 
@@ -169,7 +176,7 @@ Deploy a permissionless **Vault Factory Contract** to allow anyone to launch Hed
 
 #### 1. Liquidation and Keeper Bots – $12,800
 
-- Develop an open-source **Liquidation Bot**, including a working example that anyone can run to monitor oracle data and trigger claims. [More in our technical documentation](#)
+- Develop an open-source **Liquidation Bot**, including a working example that anyone can run to monitor oracle data and trigger claims. [Read More](https://github.com/SentinelFi/build_35_submission/blob/main/technical.md#-liquidation-bots-and-keepers)
 
 - Add Protocol level incentives for people to run these bots.
 
