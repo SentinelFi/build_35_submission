@@ -1,12 +1,9 @@
 ![alt text](images/cover.png)
 
-### Submission Video Links 
- - [Loom](https://www.loom.com/share/a926c77762ed46669a0fa29b65a2c4ef?sid=b2456589-db6d-457d-b4b9-49569ea7fce7)
- - [Vimeo](https://vimeo.com/1075023384)
- - [Youtube](https://youtu.be/7APYa37jIIc)
-
-
 # Sentinel Protocol
+
+Please see our technical documentation here
+[Technical Documentation](https://github.com/SentinelFi/build_35_submission/blob/main/technical.md)
 
 ## Submission Title 
 Parametric Insurance Framework and Flight Insurance Beta Launch
@@ -19,8 +16,6 @@ https://sentinel-finance.vercel.app/
 
 ## Code URL: 
 https://github.com/SentinelFi#-sentinel-protocol-repositories
-
-## Video URL: * (3 min)
 
 ## Products & Services
 
