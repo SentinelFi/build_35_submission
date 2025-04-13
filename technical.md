@@ -1,4 +1,3 @@
-![alt text](images/technical_cover.png)
 # Technical Architecture
 
 ## Table of Contents
@@ -242,3 +241,5 @@ In ecosystems like Ethereum, automation is handled by mature services such as [C
 To address this, we are exploring the use of **Acurast Trusted Execution Environments** to run keeper-like logic off-chain and submit transactions back to Soroban. We have already confirmed that this is technically feasible. The next step is to evaluate the **infrastructure cost and reliability** of using Acurast for production-grade task automation.
 
 This experiment will help us build a robust and decentralized automation layer that ensures timely settlement and event-driven execution across all Sentinel risk markets.
+
+![alt text](images/technical_cover.png)
